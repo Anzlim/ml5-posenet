@@ -34,7 +34,7 @@ function setup() {
   
   frameRate(10);
   setTimeout(function(){save(poses, 'my.json');},30000);
-  console.log("added new");
+  console.log("added new yes");
   // Hide the video element, and just show the canvas
   video.hide();
 }
