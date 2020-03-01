@@ -28,7 +28,7 @@ function setup() {
   // This sets up an event that fills the global variable "poses"
   // with an array every time new poses are detected
   poseNet.on('pose', function(results) {
-    poses = results;
+    poses.push(results);
   });
   
   
@@ -52,8 +52,8 @@ function draw() {
   image(video, 0, 0, width, height);
 //background(51);
   // We can call both functions to draw all keypoints and the skeletons
-  drawKeypoints();
-  drawSkeleton();
+  //drawKeypoints();
+  //drawSkeleton();
 }
 
 // A function to draw ellipses over the detected keypoints
